@@ -7,43 +7,59 @@
   <link rel="stylesheet" href="styles.css">  
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="inner-header flex">
-                <div class="title">
-                    <h1>FULL STACK development</h1>
-                </div>
-                <div class="header-img-container">
-                    <img class="header-img" src="images/header.png" alt="Full Stack Developer">
-                </div>
-            </div>
-            <div class="dive-in-box">
-                <a href="#" id="diveBtn" class="dive-in-btn">Dive into Full Stack</a>
+  <header class="header">
+    <div class="inner-header flex">
+      <div class="title">
+        <h1>FULL STACK development</h1>
+      </div>
+      <div class="header-img-container">
+        <img class="header-img" src="images/header.png" alt="Full Stack Developer">
+      </div>
+    </div>
+    <div class="dive-in-box">
+      <a href="#" id="diveBtn" class="dive-in-btn">Dive into Full Stack</a>
+    </div>
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+  </header>
 
-            </div>
-            <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                    </g>
-                </svg>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-inner">
-              <p>Who is Full Stack Developer?</p>
-            </div>
-          </div>
-          
-    </header>
-      
+  <div class="content">
+    <div class="content-inner">
+      <p>Who is Full Stack Developer?</p>
+    </div>
+  </div>
+
+  <div class="popup-wrapper" id="popupWrapper">
+    <div class="popup-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <div class="popup-text">
+        <h2>A Full Stack Developer is...</h2>
+        <p>an ultimate generalist, capable of independently building minimum viable products and integrating multiple technologies.</p>
+        <p>Becoming a full-stack developer requires a solid understanding of:</p>
+        <ul>
+          <li>Frontend technologies</li>
+          <li>Backend technologies</li>
+          <li>Database management</li>
+          <li>DevOps practices</li>
+          <li>Mobile application development</li>
+        </ul>
+        <p>This versatility allows them to create and maintain complete web applications independently or as part of a development team.</p>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section class="features">
       <div class="feature">
@@ -99,7 +115,6 @@
             </div>
           </div>
       </div>
-
       <div class="feature">
         <div class="icon">
             <img src="images/Elements/devops.png" alt="Devops">
@@ -117,7 +132,6 @@
             </div>
         </div>
       </div>
-
       <div class="feature">
         <div class="icon">
             <img src="images/Elements/mobileapp.png" alt="Mobile App Dev">
@@ -134,7 +148,7 @@
               <img src="images/subelements/react.png" alt="React">
             </div>
       </div>
-            
+
     </section>
   </main>
 

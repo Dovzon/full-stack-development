@@ -1,4 +1,3 @@
-/* CSS Styles */
 * {
   margin: 0;
   padding: 0;
@@ -95,33 +94,28 @@ p {
 }
 
 .content {
-  max-width: 600px; /* Prilagodite širinu po potrebi */
-  margin: 50px auto; /* Centralizacija i margina */
-  border: 2px solid transparent; /* Početni prozirni rub */
-  border-radius: 10px; /* Zaobljeni rubovi */
-  overflow: hidden; /* Da bi efekti bili unutar okvira */
-  transition: border-color 0.3s, transform 0.3s; /* Animacija promjene boje ruba i transformacije */
-  cursor: pointer; /* Pokazivač kao znak interaktivnosti */
-  margin-bottom: -20px; /* Smanjenje margine prema dolje */
+  max-width: 600px; 
+  margin: 50px auto;
+  border: 2px solid transparent; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: pointer; 
+  margin-bottom: -20px; 
 }
 
 .content:hover {
-  border-color: #3498db; /* Boja ruba na hover */
-  transform: scale(1.05); /* Blago povećanje veličine na hover */
+  border-color: #3498db;
+  transform: scale(1.05); 
 }
 
 
 .content p {
-  font-size: 50px; /* Veličina fonta */
-  color: #333; /* Boja teksta */
-  text-align: center; /* Centriranje teksta */
-  margin-bottom: 10px; /* Margina ispod teksta */
+  font-size: 50px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
 }
-
-
-
-
-
 
 /* Animation */
 .parallax > use {
@@ -241,4 +235,105 @@ h2 {
   height: 100%;
   object-fit: contain;
   border-radius: 50%;
+}
+
+.popup-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  max-height: 600px; 
+  overflow-y: auto;
+  position: relative;
+  height: 60vh; 
+  overflow-y: auto;
+}
+
+.popup-text {
+  position: relative;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+.close-btn:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.close-btn:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+  pointer-events: auto; 
+}
+
+.popup-wrapper.open {
+  display: flex;
+  z-index: 1000; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-text {
+  padding: 20px;
+}
+
+.popup-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.popup-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.popup-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.popup-text li {
+  margin-bottom: 5px;
 }
