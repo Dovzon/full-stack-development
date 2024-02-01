@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Development</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="inner-header flex">
+      <div class="title">
+        <h1>FULL STACK development</h1>
+      </div>
+      <div class="header-img-container">
+        <img class="header-img" src="images/header.png" alt="Full Stack Developer">
+      </div>
+    </div>
+    <div class="dive-in-box">
+      <a href="#" id="diveBtn" class="dive-in-btn">Dive into Full Stack</a>
+    </div>
+    <div>
+      <!-- Waves SVG -->
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="content-inner">
+      <p>Who is a Full Stack Developer?</p>
+    </div>
+  </div>
+
+  <!-- Popup Section -->
+  <div class="popup-wrapper" id="popupWrapper">
+    <div class="popup-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <div class="popup-text">
+        <h2>A Full Stack Developer is...</h2>
+        <p>an ultimate generalist, capable of independently building minimum viable products and integrating multiple technologies.</p>
+        <p>Becoming a full-stack developer requires a solid understanding of:</p>
+        <ul>
+          <li>Frontend technologies</li>
+          <li>Backend technologies</li>
+          <li>Database management</li>
+          <li>DevOps practices</li>
+          <li>Mobile application development</li>
+        </ul>
+        <p>This versatility allows them to create and maintain complete web applications independently or as part of a development team.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Features Section -->
+    <section class="features">
+      <!-- Feature 1 -->
+      <div class="feature" onclick="openPopup1()">
+        <div class="icon" id="popupTrigger1">
+            <img src="images/Elements/frontend-dev.png" alt="Front-End Development">
+        </div>
+        <h2>FRONTEND DEV</h2>
+        <div class="sub-icons">
+          <div class="sub-icon">
+            <img src="images/subelements/html.png" alt="HTML">
+          </div>
+          <div class="sub-icon">
+            <img src="images/subelements/css.png" alt="CSS">
+          </div>
+          <div class="sub-icon">
+            <img src="images/subelements/js.png" alt="JavaScript">
+          </div>
+        </div>
+      </div>
+      <!-- Feature 2 -->
+      <div class="feature" onclick="openPopup2()">
+        <div class="icon" id="popupTrigger2">
+            <img src="images/Elements/backend-dev.png" alt="Back-End Development">
+        </div>
+        <h2>BACKEND DEV</h2>
+        <div class="sub-icons">
+            <div class="sub-icon">
+              <img src="images/subelements/python.png" alt="Python">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/nodejs.png" alt="Node JS">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/c.png" alt="C#">
+            </div>
+          </div>
+        </div>
+
+      <!-- Feature 3 -->
+      <div class="feature" onclick="openPopup3()">
+        <div class="icon" id="popupTrigger3">
+            <img src="images/Elements/databases.png" alt="Databases">
+        </div>
+        <h2>DATABASES</h2>
+        <div class="sub-icons">
+            <div class="sub-icon">
+              <img src="images/subelements/mysql.png" alt="My SQL">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/postgre.png" alt="Postgre SQL">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/mongodb.png" alt="Mongo DB">
+            </div>
+          </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature" onclick="openPopup4()">
+        <div class="icon" id="popupTrigger4">
+            <img src="images/Elements/devops.png" alt="Devops">
+        </div>
+        <h2>DEVOPS</h2>
+        <div class="sub-icons">
+            <div class="sub-icon">
+              <img src="images/subelements/aws.png" alt="AWS">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/git.png" alt="Gitlab SQL">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/cicd.png" alt="CI/CD">
+            </div>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="feature" onclick="openPopup5()">
+        <div class="icon" id="popupTrigger5">
+            <img src="images/Elements/mobileapp.png" alt="Mobile App Dev">
+        </div>
+        <h2>MOBILE APP DEV</h2>
+        <div class="sub-icons">
+            <div class="sub-icon">
+              <img src="images/subelements/android.png" alt="Android">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/ios.png" alt="iOS">
+            </div>
+            <div class="sub-icon">
+              <img src="images/subelements/react.png" alt="React">
+            </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- The overlay and popup content -->
+<div class="overlay" id="overlay1">
+    <div class="popup" onclick="closePopup1()">
+        <h1>Front-end development</h1>
+	<b>Front-end development involves creating and implementing the visual elements of a website or application that users interact with directly. Front-end developers use languages like HTML, CSS, and JavaScript to build the user interface, ensuring a seamless and engaging experience for website visitors or app users.</b>
+	  <button class="close-btn" id="closeButton1">&times;</button>
+    </div>
+</div>
+<div class="overlay" id="overlay2">
+    <div class="popup" onclick="closePopup2()">
+        <h1>Backend development</h1>
+	<b>Backend development focuses on building and maintaining the server-side of a website or application. Backend developers work with databases, server logic, and APIs to ensure that the application's front end functions smoothly. They use languages such as Python, Ruby, Java, or Node.js to handle server-side operations and manage data flow between the server and the user interface.</b>
+    <button class="close-btn" id="closeButton2">&times;</button>   
+    </div>
+</div>
+<div class="overlay" id="overlay3">
+    <div class="popup" onclick="closePopup3()">
+	<h1>Databases</h1>
+        <b>A database, in a more complex sense, is a structured and interconnected collection of data, often involving multiple tables or entities, with defined relationships and rules, managed by a database management system (DBMS) to ensure efficient storage, retrieval, and manipulation of information.</b>
+    <button class="close-btn" id="closeButton3">&times;</button>
+    </div>
+</div>
+<div class="overlay" id="overlay4">
+    <div class="popup" onclick="closePopup4()">
+        <h1>Development and Operations</h1>
+	<b>DevOps, short for Development and Operations, is a set of practices that aim to improve collaboration and efficiency between software development and IT operations teams. DevOps involves automating processes, implementing continuous integration and delivery, and fostering a culture of communication and collaboration. The goal is to streamline software development, testing, and deployment, leading to faster and more reliable delivery of software products.</b>
+    <button class="close-btn" id="closeButton4">&times;</button>  
+    </div>
+</div>
+<div class="overlay" id="overlay5">
+    <div class="popup" onclick="closePopup5()">
+        <h1>Mobile app development</h1>
+	<b>Mobile app development involves creating software applications specifically designed to run on mobile devices like smartphones and tablets. Developers use programming languages such as Swift for iOS and Kotlin or Java for Android to build native apps, or they may use frameworks like React Native or Flutter for cross-platform development. The process includes designing user interfaces, implementing functionality, and optimizing performance for a smooth and responsive user experience on mobile platforms.</b>
+    <button class="close-btn" id="closeButton5">&times;</button>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
